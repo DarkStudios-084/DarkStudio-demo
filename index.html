@@ -1,107 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rainbow Pupil School</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Dark Studio – Demo Hub</title>
   <style>
-    * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
+    body {
+      background-color: #000;
+      color: #00ffcc;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 2rem;
+    }
 
-body {
-  background: #f5f9ff;
-  color: #333;
-  line-height: 1.6;
-}
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
 
-header {
-  text-align: center;
-  padding: 4rem 2rem;
-  background: linear-gradient(135deg, #4facfe, #00f2fe);
-  color: white;
-}
+    p {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      font-size: 1.1rem;
+    }
 
-header h1 {
-  font-size: 2.5rem;
-}
+    .demo {
+      display: inline-block;
+      margin: 1rem;
+      padding: 1rem 2rem;
+      background-color: #00ffcc;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
 
-header p {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
-}
+    .demo:hover {
+      background-color: #00e6b8;
+      transform: scale(1.05);
+    }
 
-.cta {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  background: #fff;
-  color: #0077cc;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.about, .departments, footer {
-  padding: 2rem;
-  text-align: center;
-}
-
-.cards {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-}
-
-.card {
-  background: #fff;
-  padding: 1rem 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  min-width: 150px;
-}
-
-footer {
-  background: #222;
-  color: #eee;
-  padding: 2rem;
-  margin-top: 2rem;
-}
+    .preview-img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 12px;
+      margin: 2rem auto;
+      box-shadow: 0 0 20px #00ffcc55;
+    }
+    
+    .gap{
+      height: 10px;
+    }
   </style>
 </head>
+
 <body>
-  <header>
-    <h1>🌈Rainbow Pupil School</h1>
-    <h1></h1>
-    <p>"A better education for a better Tommorow"</p>
-    <a href="#contact" class="cta">Contact Us</a>
-  </header>
+  <h1> Dark Studio Demo Hub</h1>
+  <div class="gap"></div>
+  <p>
+    Welcome to the demo page of Dark Studios. Explore our landing pages, UI themes, and custom features built for clients and projects.
+  </p>
 
-  <section class="about">
-    <h2>About Us</h2>
-    <p>
-      Established in 2016, Rainbow Pupil School is a center of academic excellence based in Washim. We aim to create future-ready learners.
-    </p>
-  </section>
 
-  <section class="departments">
-    <h2>Sections</h2>
-    <div class="cards">
-      <div class="card">Addmission enquiry</div>
-      <div class="card">Parents Teachers section</div>
-      <div class="card">Students profile</div>
-    </div>
-  </section>
 
-  <footer id="contact">
-    <h3>Contact Us</h3>
-    <p>📍 IUDP Colony Washim<br>📞 +91 XXXXXXXXXX <br>📧 info@Rainbowschool.com</p>
-  </footer>
+  <!-- Demo Links -->
+  <a class="demo" href="new.html">🚀 Demo 1</a>
+  <a class="demo" href="demo2.html">✨ Demo 2</a>
 </body>
+
 </html>
