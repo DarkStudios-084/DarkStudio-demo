@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rainbow School</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: #f0faff;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+  color: white;
+  position: relative;
+}
+
+header h1 {
+  font-size: 2.7rem;
+  font-weight: 600;
+  position: relative;
+}
+
+header h1::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 5px;
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  margin: 0.6rem auto 0;
+  border-radius: 5px;
+}
+
+header p {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background: #fff;
+  color: #ff5e78;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cta:hover {
+  background: #ffe8f0;
+  transform: scale(1.05);
+}
+
+.about, .departments, footer {
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  min-width: 160px;
+  font-weight: 500;
+  color: #444;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+footer {
+  background: #222;
+  color: #eee;
+  padding: 2rem;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+}
+
+/* Mobile tweaks */
+@media (max-width: 600px) {
+  header, .about, .departments, footer {
+    padding: 1.5rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  header p {
+    font-size: 1.1rem;
+  }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌈 Rainbow School</h1>
+    <p>Bright Minds, Brighter Futures</p>
+    <a href="#contact" class="cta">Contact Us</a>
+  </header>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>
+      Rainbow School has been nurturing young minds with love and learning since 2002. Located in [City Name], we focus on all-round development and academic excellence.
+    </p>
+  </section>
+
+  <section class="departments">
+    <h2>Departments</h2>
+    <div class="cards">
+      <div class="card">Pre-Primary</div>
+      <div class="card">Primary School</div>
+      <div class="card">Secondary School</div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <h3>Contact Us</h3>
+    <p>
+      📍 Rainbow Lane, [City Name] <br />
+      📞 +91 98765XXXXX <br />
+      📧 hello@rainbowschool.in
+    </p>
+  </footer>
+</body>
+</html>
